@@ -374,7 +374,7 @@ int	main(int	ac,	char	**av){
 	char *inputFile = NULL;
 	char *outputFileName = NULL;
 	char *dbSNP = NULL;
-	while((ch = getopt(ac, av, "i:d:r:o:q:m")) != -1) {
+	while((ch = getopt(ac, av, "i:d:r:o:q:s:m")) != -1) {
 		switch(ch) {
 			case 'i':
 				printf("Input file: %s\n", optarg);
