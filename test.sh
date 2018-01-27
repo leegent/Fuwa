@@ -1,0 +1,1 @@
+./fuwa -d ./dbsnp141.gz -r ./reference -i ./example.bam -o example.output
