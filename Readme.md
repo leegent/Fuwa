@@ -2,7 +2,7 @@
 
 A decision-tree-based fast variant caller.
 
-# Install
+## Install
 You can directly download the complete package using the following command:
 ```bash
 wget -c http://rubywu.cn/public/fuwa.gz
@@ -26,7 +26,7 @@ wget http://rubywu.cn/public/dbsnp141.gz
 
 **Attention:** A 64-bit Linux OS is required for `make`. Type `getconf LONG_BIT` to confirm your OS bits.
 
-# Usage: 
+## Usage: 
     fuwa [options]
 	-i input     input bam file
 	-d dbSNP     dbSNP gz file
@@ -36,7 +36,7 @@ wget http://rubywu.cn/public/dbsnp141.gz
 	-q qual      [optional] variant qual filtering threshold (range: [0, 1], default: 0.6)
 	-m           [optional] the sample is male. By default the sample is considered female
 
-**Example:**
+## Example
 ```
 ./fuwa -i input.bam -o output -r ./reference/ -d ./dbSNP141.gz -q 0.7 -s 0.7
 ```
