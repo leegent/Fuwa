@@ -5,13 +5,15 @@ A decision-tree-based fast variant caller.
 ## Install
 You can directly download the complete package using the following command:
 ```bash
-wget -c http://rubywu.cn/public/fuwa.gz
+wget -c http://rubywu.cn/public/fuwa.tar.gz
 ```
 and then 
 ```bash
-gunzip fuwa.gz
+tar zxvf fuwa.tar.gz
 cd fuwa
 sh install.sh
+# Test Fuwa with sim data
+sh test.sh
 ```
 
 Alternatively, you can clone this repository to your computer and `make` the executable file.
@@ -24,7 +26,7 @@ wget http://rubywu.cn/public/reference.tar.bz2
 wget http://rubywu.cn/public/dbsnp141.gz
 ```
 
-**Attention:** A 64-bit Linux OS is required for `make`. Type `getconf LONG_BIT` to confirm your OS bits.
+**Attention:** A 64-bit Linux OS is required for `make`. Type `getconf LONG_BIT` to see your OS bits.
 
 ## Usage: 
     fuwa [options]
@@ -38,5 +40,9 @@ wget http://rubywu.cn/public/dbsnp141.gz
 
 ## Example
 ```
-./fuwa -i input.bam -o output -r ./reference/ -d ./dbSNP141.gz -q 0.7 -s 0.7
+./fuwa -i example.bam -o example.output -r reference/ -d dbSNP141.gz -q 0.3 -s 0.3
+```
+The BAM file for test can be obtained using the following command:
+```
+wget http://rubywu.cn/public/example.bam
 ```
