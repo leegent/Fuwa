@@ -21,9 +21,9 @@ Alternatively, you can clone this repository to your computer and `make` the exe
 The reference files and the gziped dbSNP file can be downloaded using the following commands:
 ```bash
 # reference
-wget http://rubywu.cn/public/reference.tar.bz2
+wget -c http://rubywu.cn/public/reference.tar.bz2
 # dbSNP
-wget http://rubywu.cn/public/dbsnp141.gz
+wget -c http://rubywu.cn/public/dbsnp141.gz
 ```
 
 **Attention:** A 64-bit Linux OS is required for `make`. Type `getconf LONG_BIT` to see your OS bits.
@@ -44,5 +44,5 @@ wget http://rubywu.cn/public/dbsnp141.gz
 ```
 The BAM file for test can be obtained using the following command:
 ```
-wget http://rubywu.cn/public/example.bam
+wget -c http://rubywu.cn/public/example.bam
 ```
