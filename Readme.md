@@ -35,7 +35,7 @@ wget -c http://rubywu.cn/public/dbsnp141.gz
 	-r ref_dir   reference directory
 	-o output    [optional] output file name without extension (default: input file name)
 	-s SNP_qual  [optional] Filtering threshold of quality score for SNPs (range: [0, 1], default: 0.8)
-	-q qual      [optional] variant qual filtering threshold (range: [0, 1], default: 0.6)
+	-q qual      [optional] Filtering threshold of quality score for indels (range: [0, 1], default: 0.6)
 	-m           [optional] the sample is male. By default the sample is considered female
 
 ## Example
